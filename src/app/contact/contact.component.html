@@ -1,1 +1,23 @@
-<h1>Contact Us Page</h1>
+<form #form="ngForm" (ngSubmit)="submitMessage()">
+  <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input
+    name="email"
+    class="form-control"
+    placeholder="email"
+    [(ngModel)]="email"
+  />
+  <br />
+
+  <label for="exampleFormControlInput1" class="form-label">Password</label>
+  <input
+    type="password"
+    name="password"
+    class="form-control"
+    placeholder="password"
+    [(ngModel)]="password"
+  />
+
+  <br />
+
+  <input type="submit" value="send message" class="btn btn-primary" />
+</form>

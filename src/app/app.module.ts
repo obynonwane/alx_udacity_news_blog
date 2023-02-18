@@ -11,10 +11,19 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ItemComponent } from './item/item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, FooterComponent, AboutComponent, ContactComponent, GalleryComponent, ItemComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    FooterComponent,
+    AboutComponent,
+    ContactComponent,
+    GalleryComponent,
+    ItemComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [PostService],
   bootstrap: [AppComponent],
 })
