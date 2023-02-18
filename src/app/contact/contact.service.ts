@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactService {
   constructor(private http: HttpClient) {}
 
-  url = 'https://dao-escrow.onrender.com/api/v1/auth/signin';
+  url = '';
 
   sendMessage(data: any) {
     return this.http.post(this.url, data);
